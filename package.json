@@ -1,0 +1,17 @@
+{
+  "name": "qwik-layout-loader-guard-repro",
+  "private": true,
+  "type": "module",
+  "description": "Reproduction: a layout's routeLoader$ request runs the loaders of the page at the layout's path as guards",
+  "scripts": {
+    "build": "vite build && vite build --ssr src/entry.preview.tsx",
+    "preview": "vite preview --port 4173 --strictPort",
+    "dev": "vite --mode ssr --port 5173 --strictPort",
+    "check": "./check.sh"
+  },
+  "devDependencies": {
+    "@qwik.dev/core": "2.0.0-rc.4",
+    "@qwik.dev/router": "2.0.0-rc.4",
+    "vite": "8.2.4"
+  }
+}
